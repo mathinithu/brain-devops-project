@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: brain-static-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: brain-static
+  template:
+    metadata:
+      labels:
+        app: brain-static
+    spec:
+      containers:
+      - name: brain-static
+        image: <ACCOUNT_ID>.dkr.ecr.ap-south-1.amazonaws.com/brain-static-app:latest
+        ports:
+        - containerPort: 80
