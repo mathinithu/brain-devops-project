@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: brain-static
-        image: <ACCOUNT_ID>.dkr.ecr.ap-south-1.amazonaws.com/brain-static-app:latest
+        image: 310078196634.dkr.ecr.ap-south-1.amazonaws.com/brain-static-app:latest
         ports:
         - containerPort: 80
